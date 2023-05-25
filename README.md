@@ -19,8 +19,8 @@ The webservice is created using Python and Django.
 
 1. The code for the endpoints can be found in the receipts application: "receipts/views.py"
 
-2. The test cases for the endpoints can be found in the receipts application: "receipts/tests.py".
-   Below are the different test cases covered: 
+2. The test cases for the service can be found in the receipts application: "receipts/tests.py". 
+   Below are the different edge cases covered: 
     * Test for processing receipts with a valid payload (Returns 200 status code and response contains an id).
     * Test for processing receipts with invalid payload (Returns 400 status code).
     * Test to get points when the receipt is found (Returns 200 status code and response contains the points).
@@ -35,3 +35,11 @@ The webservice is created using Python and Django.
 
     ![POST request](POST.png)
     ![GET request](GET.png)
+
+5. Steps to run the test cases on a local machine:
+    * Create a python virtual environment: "python -m venv ./py-django" (Note: py-django is the name of the virtual environment)
+    * Activate the environment by running: "py-django/Scripts/activate"
+    * Install Django using : "pip install django"
+    * Run the test cases by running: "python manage.py test". 
+    Output: 
+    ![Test Cases](Test_Cases.png)
