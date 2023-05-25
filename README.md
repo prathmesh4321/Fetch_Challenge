@@ -29,7 +29,7 @@ The webservice is created using Python and Django.
 
 3. Can use Postman or any other service to test the below urls.
     "http://127.0.0.1:8000/receipts/process"
-    "http://127.0.0.1:8000/receipts/<id>/points"
+    "http://127.0.0.1:8000/receipts/id/points"
 
 4. Below are the screenshots for the POST and GET requests made to the service using Postman.
 
