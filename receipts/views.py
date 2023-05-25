@@ -20,12 +20,12 @@ def process_receipts(request):
 
 def get_points(request, id):
     if request.method == 'GET':
-        receipt_data = receipt_storage[id]
-        if receipt_data:
+        try:
+            receipt_data = receipt_storage[id]
             points = calculate_points(receipt_data)
             response_data = {'points': points}
             return JsonResponse(response_data)
-        else:
+        except KeyError:
             return HttpResponse('Receipt not found.', status=404)
     else:
         return HttpResponse('Method not allowed.', status=405)
