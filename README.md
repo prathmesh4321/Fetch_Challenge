@@ -3,7 +3,7 @@ Receipt Processor Challenge
 
 The webservice is created using Python and Django. 
 
-# INSTRUCTIONS TO RUN THE SERVICE
+## INSTRUCTIONS TO RUN THE SERVICE
 
 1. Clone the repository to your local machine.
 
@@ -15,7 +15,7 @@ The webservice is created using Python and Django.
 
     docker run --publish 8000:8000 python-django
 
-Additional Information:
+## Additional Information:
 
 1. The code for the endpoints can be found in the receipts application: "receipts/views.py"
 
