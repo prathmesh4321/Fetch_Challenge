@@ -40,6 +40,6 @@ The webservice is created using Python and Django.
     * Create a python virtual environment: "python -m venv ./py-django" (Note: py-django is the name of the virtual environment)
     * Activate the environment by running: "py-django/Scripts/activate"
     * Install Django using : "pip install django"
-    * Run the test cases by running: "python manage.py test". 
+    * Run the test cases from root of the repository by running: "python manage.py test". 
     Output: 
     ![Test Cases](Test_Cases.png)
